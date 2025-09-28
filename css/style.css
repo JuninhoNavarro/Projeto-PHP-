@@ -1,0 +1,436 @@
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+    color: rgb(10, 10, 10);
+        /*cor da letra*/
+}
+
+li {
+    list-style: none;
+    /*remove as bolinha da lista*/
+}
+
+a {
+    text-decoration: none;
+    /*remove o sublinhado do link*/
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    /*deixar responsiva*/
+}
+
+* {
+    /*seleciona todos os elementos*/
+    box-sizing: border-box;
+}
+
+/*superinfo*/
+
+.superinfo-bg {
+    background: #122ab2;
+    color: white;
+}
+
+.superinfo {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex; /*deixa um do lado do outro (itens)*/
+    /* deixa todos na mesma linha*/
+    justify-content: space-between;
+    /*espaçamento entre os items*/
+    flex-wrap: wrap;
+    /*quebra a linha se diminuir a tela*/
+    padding-top: 10px;
+}
+
+.superinfo p, .superinfo a {
+    margin: 0px, 10px 10px 10px;
+    /*0 - pra cima, 10 pros lado, 10 para baixo, 10 para o outro lado*/
+}
+
+.superinfo a {
+    color: white;
+}
+
+/*menu*/
+.menu-bg {
+    background: blue;
+}
+
+.menu {
+    max-width: 968px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.menu a {
+    color: white;
+}
+
+.menu-logo a {
+    font-size: 2.25em;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.menu-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-nav a {
+    font-size: 1.25em;
+    display: block;
+    padding: 10px;
+}
+
+.menu-nav a:hover {
+    /*quando passar o mouse por cima do menu ele muda de cor*/
+    color: #122ab2;
+}
+
+/* introdução*/
+.introducao {
+    font-size: 3em;
+    line-height: 1;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 30px 10px;
+}
+
+.introducao-paragrafo {
+    font-size: 1.25em;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 5px;
+}
+
+
+/*Sobre*/
+
+.sobre {
+    border-top: 2px solid #122ab2;
+    border-bottom: 2px solid #122ab2;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobre-info {
+    flex: 2 1 300px;
+    margin: 0 10px;
+}
+
+.sobre-info h1 {
+    font-size: 3em;
+    margin-bottom: .5em;
+}
+
+.sobre-info p {
+    font-size: 1.25;
+    line-height: 1.4;
+    margin-bottom: 1em;
+    color: #292626;
+}
+
+.sobre-img {
+    flex: 1 1 160px;
+    margin: 0 10px;
+}
+
+.produtos {
+    max-width: 960px;
+    margin: 20px auto;
+}
+
+
+.produtos h1 {
+    font-size: 3em;
+    margin: 0 10px 10px 0;
+}
+
+.produtos-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: start;
+    max-width: 960px;
+    justify-content: center;
+}
+
+.produtos-item {
+    margin: 10px;
+    max-width: 300px;
+    flex-grow: 1    ;
+}
+
+.produtos-item h2 {
+    font-size: 1.25em;
+    color: #a4a4a4;
+    background: #f7f7f7;
+    padding: 60px 20px;
+}
+
+
+
+.produtos-item a {
+    max-width: 200px;
+    display: block;
+    margin: 10px auto;
+    border: 3px solid;
+    border-radius: 20px 20px 20px 20px;
+    color: #2c70ff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.25em;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.gray {
+    border-top: 8px solid #4e4e4e;
+}
+
+.orange {
+    border-top: 8px solid #e05e13;
+}
+
+.red {
+    border-top: 8px solid #dd0a0a;
+}
+
+/*Planos */
+
+.planos {
+    background: #f7f7f7;
+    padding: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: self-start;
+}
+
+.planos-item {
+    flex: 1 1 260px; /*deixa responsivo pro mobile*/
+    border: 4px solid#122ab2;
+    border-radius: 15px;
+    padding: 60px;
+    margin: 10px;
+}
+
+.planos-item h2 {
+    font-size: 3em;
+    color: #2c70ff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.planos-item span {
+    max-width: 300px;
+    margin: 30px auto;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 5px 5px 5px ;
+    border-top: 4px solid #122ab2;
+    border-bottom: 4px solid #122ab2;
+}
+
+.planos-item li::before {
+    content: '';
+    display: block;
+    margin: 15px;
+    width: 8px;
+    height: 8px;
+    background: #2c70ff;
+    border-radius: 80%;
+}
+.planos-item ul {
+    max-width: 300px;
+    margin: 20px auto;
+    font-size: 1.25em;
+    font-style: italic;
+    color: #0a0a0a;
+    margin-bottom: 15px;
+}
+
+.planos-item li {
+    
+    margin: 10px 5px;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+
+.planos-item a {
+    max-width: 300px;
+    display: block;
+    margin: 20px auto;
+    border: 4px solid;
+    color: #2c70ff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.25em;
+    padding: 15px 0;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .planos {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.qualidade {
+    max-width: 960px;
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.qualidade-item {
+    flex: 1 1 200px; /*como o max-width do container é 960 dividiria os itens em 3 colunas*/
+    margin: 20px 10px;
+}
+
+.qualidade-item h2 {
+    font-size: 2.25em;
+    color: #222222;
+    margin-bottom: 20px;
+}
+
+.qualidade-item h2::before { /*deixar as cores before: antes do texto*/
+    counter-reset: '';
+    display: inline-block; /*mostra na linha*/
+    width: 8px;
+    height: 30px;
+    margin-right: 10px;
+    background: orangered;
+}
+
+.qualidade-item:nth-of-type(3n+1) h2::before {
+    background: #dd0a0a;
+}
+.qualidade-item:nth-of-type(3n+2) h2::before {
+    background: orangered;
+}
+.qualidade-item:nth-of-type(3n+3) h2::before {
+    background: rgb(230, 241, 70);
+}
+
+.qualidade-item p {
+    font-size: 1.25em;
+    line-height: 1.4;
+    color: #7c7c7c;
+}
+
+/*newsletter*/
+
+.newsletter { /*poderiamos fazer igual o menu div dentro de div*/
+    background: #f7f7f7;
+    padding: 60px calc((100% - 960px) / 2) ;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newsletter-info {
+    flex: 1 1 260px;
+    margin: 0 10px;
+}
+
+.newsletter-info h1{
+    font-size: 3em;
+    color: #122ab2;
+}
+
+.newsletter-info p {
+    font-size: 1.25em;
+    font-style: italic;
+    max-width: 230px;
+    color: #7c7c7c;
+    margin-bottom: 10px;
+}
+
+.newsletter-form {
+    flex: 2 1 260px;
+    margin: 0 10px;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newsletter-form input {
+    flex: 3 1 240px;
+    font-size: 1.25em;
+    color: #7c7c7c;
+    font-style: italic;
+    font-family: "nunito", Arial, Helvetica, sans-serif;
+    border: 4px solid #2c70ff;
+    background: transparent;
+    padding: 15px 10px;
+    margin: 0px;
+    border-radius: 0px;
+}
+
+.newsletter-form button {
+    flex: 1 1 260px;
+    font-family: "nunito", Arial, Helvetica, sans-serif;
+    font-size: 2.25em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #2c70ff;
+    color: white;
+    margin: 0px;
+    cursor: pointer;
+    border: 0px;
+    padding: 15px 10px;
+}
+
+@media(max-width: 600px) { /*quando a tela diminuir para 600px a font-size diminui para 1.5em*/
+    .newsletter-form button {
+        font-size: 1.5em;
+    }
+    
+}
+
+
+/*footer*/
+
+.footer {
+    display: flex;
+    background: #2c70ff;
+    height: 200px; /*altura*/
+    align-items: center;
+}
+
+.footer p {
+    flex: 1;
+    text-align: center;
+    font-size: 2.25em;
+    color: black;
+}
