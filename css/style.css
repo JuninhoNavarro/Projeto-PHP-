@@ -1,3 +1,4 @@
+/* ZERANDO ESTILOS PADRÃO DO NAVEGADOR */
 body,
 h1,
 h2,
@@ -5,132 +6,118 @@ p,
 ul,
 li,
 a {
-    margin: 0px;
-    padding: 0px;
+    margin: 0px; /* remove margens padrão */
+    padding: 0px; /* remove espaçamentos internos padrão */
 }
 
 body {
-    font-family: "Nunito", Arial, Helvetica, sans-serif;
-    color: rgb(10, 10, 10);
-        /*cor da letra*/
+    font-family: "Nunito", Arial, Helvetica, sans-serif; /* define a fonte principal */
+    color: rgb(10, 10, 10); /* cor do texto padrão */
 }
 
 li {
-    list-style: none;
-    /*remove as bolinha da lista*/
+    list-style: none; /* remove as bolinhas de listas */
 }
 
 a {
-    text-decoration: none;
-    /*remove o sublinhado do link*/
+    text-decoration: none; /* remove o sublinhado dos links */
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    /*deixar responsiva*/
+    display: block; /* faz a imagem se comportar como bloco */
+    max-width: 100%; /* ajusta a imagem ao tamanho do container (responsivo) */
 }
 
 * {
-    /*seleciona todos os elementos*/
-    box-sizing: border-box;
+    box-sizing: border-box; /* inclui borda e padding dentro do tamanho do elemento */
 }
 
-/*superinfo*/
-
+/* SUPERINFO (barra superior do site) */
 .superinfo-bg {
-    background: #122ab2;
-    color: white;
+    background: #122ab2; /* cor de fundo azul escuro */
+    color: white; /* cor do texto branca */
 }
 
 .superinfo {
-    max-width: 960px;
-    margin: 0 auto;
-    display: flex; /*deixa um do lado do outro (itens)*/
-    /* deixa todos na mesma linha*/
-    justify-content: space-between;
-    /*espaçamento entre os items*/
-    flex-wrap: wrap;
-    /*quebra a linha se diminuir a tela*/
-    padding-top: 10px;
+    max-width: 960px; /* largura máxima */
+    margin: 0 auto; /* centraliza no meio */
+    display: flex; /* coloca os itens lado a lado */
+    justify-content: space-between; /* espaça os itens igualmente */
+    flex-wrap: wrap; /* quebra linha se não couber */
+    padding-top: 10px; /* espaçamento no topo */
 }
 
 .superinfo p, .superinfo a {
-    margin: 0px, 10px 10px 10px;
-    /*0 - pra cima, 10 pros lado, 10 para baixo, 10 para o outro lado*/
+    margin: 0px, 10px 10px 10px; /* espaçamento (mas essa vírgula aqui é erro, deveria ser espaço) */
 }
 
 .superinfo a {
-    color: white;
+    color: white; /* links ficam brancos */
 }
 
-/*menu*/
+/* MENU PRINCIPAL */
 .menu-bg {
-    background: blue;
+    background: blue; /* cor de fundo do menu */
 }
 
 .menu {
-    max-width: 968px;
-    margin: 0 auto;
-    padding: 15px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    max-width: 968px; /* largura máxima */
+    margin: 0 auto; /* centraliza */
+    padding: 15px 0; /* espaçamento em cima e embaixo */
+    display: flex; /* itens lado a lado */
+    flex-wrap: wrap; /* quebra linha se necessário */
+    justify-content: space-between; /* espaço entre os itens */
+    align-items: center; /* alinha verticalmente */
 }
 
-
 .menu a {
-    color: white;
+    color: white; /* links brancos */
 }
 
 .menu-logo a {
-    font-size: 2.25em;
-    font-weight: bold;
-    margin: 0 10px;
+    font-size: 2.25em; /* tamanho grande para logo */
+    font-weight: bold; /* deixa em negrito */
+    margin: 0 10px; /* espaçamento lateral */
 }
 
 .menu-nav ul {
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; /* lista de menu na horizontal */
+    flex-wrap: wrap; /* quebra linha se não couber */
 }
 
 .menu-nav a {
-    font-size: 1.25em;
-    display: block;
-    padding: 10px;
+    font-size: 1.25em; /* tamanho dos links */
+    display: block; /* ocupa toda a área do bloco */
+    padding: 10px; /* espaçamento interno */
 }
 
 .menu-nav a:hover {
-    /*quando passar o mouse por cima do menu ele muda de cor*/
-    color: #122ab2;
+    color: #122ab2; /* muda a cor do link ao passar o mouse */
 }
 
-/* introdução*/
+/* INTRODUÇÃO */
 .introducao {
-    font-size: 3em;
-    line-height: 1;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 30px 10px;
+    font-size: 3em; /* título grande */
+    line-height: 1; /* altura da linha */
+    max-width: 960px; /* largura máxima */
+    margin: 0 auto; /* centraliza */
+    padding: 30px 10px; /* espaçamento */
 }
 
 .introducao-paragrafo {
-    font-size: 1.25em;
-    display: flex;
-    flex-wrap: wrap;
-    line-height: 1;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 40px 5px;
+    font-size: 1.25em; /* texto maior que o padrão */
+    display: flex; /* deixa flexível */
+    flex-wrap: wrap; /* quebra linha se necessário */
+    line-height: 1; /* altura da linha */
+    max-width: 960px; /* largura máxima */
+    margin: 0 auto; /* centraliza */
+    padding: 40px 5px; /* espaçamento */
 }
 
-
-/*Sobre*/
-
+/* SEÇÃO SOBRE */
 .sobre {
-    border-top: 2px solid #122ab2;
-    border-bottom: 2px solid #122ab2;
+    border-top: 2px solid #122ab2; /* linha azul no topo */
+    border-bottom: 2px solid #122ab2; /* linha azul embaixo */
     max-width: 960px;
     margin: 0 auto;
     padding: 60px 0;
@@ -139,32 +126,32 @@ img {
 }
 
 .sobre-info {
-    flex: 2 1 300px;
+    flex: 2 1 300px; /* ocupa mais espaço que imagens */
     margin: 0 10px;
 }
 
 .sobre-info h1 {
-    font-size: 3em;
-    margin-bottom: .5em;
+    font-size: 3em; /* título grande */
+    margin-bottom: .5em; /* espaçamento abaixo */
 }
 
 .sobre-info p {
-    font-size: 1.25;
-    line-height: 1.4;
-    margin-bottom: 1em;
-    color: #292626;
+    font-size: 1.25; /* (aqui falta unidade, deveria ser em/em) */
+    line-height: 1.4; /* altura da linha */
+    margin-bottom: 1em; /* espaçamento */
+    color: #292626; /* cor cinza escura */
 }
 
 .sobre-img {
-    flex: 1 1 160px;
+    flex: 1 1 160px; /* ocupa menos espaço que o texto */
     margin: 0 10px;
 }
 
+/* SERVIÇOS */
 .produtos {
     max-width: 960px;
     margin: 20px auto;
 }
-
 
 .produtos h1 {
     font-size: 3em;
@@ -173,55 +160,45 @@ img {
 
 .produtos-container {
     display: flex;
-    flex-wrap: nowrap;
-    align-items: start;
+    flex-wrap: nowrap; /* não quebra linha */
+    align-items: start; /* alinha no topo */
     max-width: 960px;
-    justify-content: center;
+    justify-content: center; /* centraliza */
 }
 
 .produtos-item {
     margin: 10px;
     max-width: 300px;
-    flex-grow: 1    ;
+    flex-grow: 1; /* cresce para ocupar espaço */
 }
 
 .produtos-item h2 {
     font-size: 1.25em;
-    color: #a4a4a4;
-    background: #f7f7f7;
+    color: #a4a4a4; /* cinza */
+    background: #f7f7f7; /* fundo cinza claro */
     padding: 60px 20px;
 }
-
-
 
 .produtos-item a {
     max-width: 200px;
     display: block;
     margin: 10px auto;
     border: 3px solid;
-    border-radius: 20px 20px 20px 20px;
-    color: #2c70ff;
-    text-transform: uppercase;
+    border-radius: 20px; /* bordas arredondadas */
+    color: #2c70ff; /* azul */
+    text-transform: uppercase; /* deixa letras maiúsculas */
     font-weight: bold;
     font-size: 1.25em;
     padding: 15px 0;
     text-align: center;
 }
 
-.gray {
-    border-top: 8px solid #4e4e4e;
-}
+/* cores diferentes nos cards */
+.gray { border-top: 8px solid #4e4e4e; }
+.orange { border-top: 8px solid #e05e13; }
+.red { border-top: 8px solid #dd0a0a; }
 
-.orange {
-    border-top: 8px solid #e05e13;
-}
-
-.red {
-    border-top: 8px solid #dd0a0a;
-}
-
-/*Planos */
-
+/* PLANOS */
 .planos {
     background: #f7f7f7;
     padding: 60px;
@@ -231,9 +208,9 @@ img {
 }
 
 .planos-item {
-    flex: 1 1 260px; /*deixa responsivo pro mobile*/
-    border: 4px solid#122ab2;
-    border-radius: 15px;
+    flex: 1 1 260px; /* responsivo */
+    border: 4px solid #122ab2;
+    border-radius: 15px; /* bordas arredondadas */
     padding: 60px;
     margin: 10px;
 }
@@ -245,27 +222,27 @@ img {
     margin-top: 20px;
 }
 
-
 .planos-item span {
     max-width: 300px;
     margin: 30px auto;
     display: block;
     text-align: center;
     font-weight: bold;
-    padding: 20px 5px 5px 5px ;
+    padding: 20px 5px 5px 5px;
     border-top: 4px solid #122ab2;
     border-bottom: 4px solid #122ab2;
 }
 
 .planos-item li::before {
-    content: '';
+    content: ''; /* marcador customizado */
     display: block;
     margin: 15px;
     width: 8px;
     height: 8px;
-    background: #2c70ff;
-    border-radius: 80%;
+    background: #2c70ff; /* azul */
+    border-radius: 80%; /* vira bolinha */
 }
+
 .planos-item ul {
     max-width: 300px;
     margin: 20px auto;
@@ -276,15 +253,12 @@ img {
 }
 
 .planos-item li {
-    
     margin: 10px 5px;
     display: flex;
     justify-content: stretch;
     align-items: center;
     margin-bottom: 15px;
 }
-
-
 
 .planos-item a {
     max-width: 300px;
@@ -299,6 +273,7 @@ img {
     text-align: center;
 }
 
+/* responsividade dos planos */
 @media (max-width: 800px) {
     .planos {
         padding-left: 10px;
@@ -306,6 +281,7 @@ img {
     }
 }
 
+/* QUALIDADE */
 .qualidade {
     max-width: 960px;
     margin: 60px auto;
@@ -314,7 +290,7 @@ img {
 }
 
 .qualidade-item {
-    flex: 1 1 200px; /*como o max-width do container é 960 dividiria os itens em 3 colunas*/
+    flex: 1 1 200px; /* divide em 3 colunas */
     margin: 20px 10px;
 }
 
@@ -324,24 +300,20 @@ img {
     margin-bottom: 20px;
 }
 
-.qualidade-item h2::before { /*deixar as cores before: antes do texto*/
-    counter-reset: '';
-    display: inline-block; /*mostra na linha*/
+/* barra colorida antes do título */
+.qualidade-item h2::before {
+    content: ' ';
+    display: inline-block;
     width: 8px;
     height: 30px;
     margin-right: 10px;
     background: orangered;
 }
 
-.qualidade-item:nth-of-type(3n+1) h2::before {
-    background: #dd0a0a;
-}
-.qualidade-item:nth-of-type(3n+2) h2::before {
-    background: orangered;
-}
-.qualidade-item:nth-of-type(3n+3) h2::before {
-    background: rgb(230, 241, 70);
-}
+/* cores alternadas para cada item */
+.qualidade-item:nth-of-type(3n+1) h2::before { background: #dd0a0a; }
+.qualidade-item:nth-of-type(3n+2) h2::before { background: orangered; }
+.qualidade-item:nth-of-type(3n+3) h2::before { background: rgb(230, 241, 70); }
 
 .qualidade-item p {
     font-size: 1.25em;
@@ -349,11 +321,10 @@ img {
     color: #7c7c7c;
 }
 
-/*newsletter*/
-
-.newsletter { /*poderiamos fazer igual o menu div dentro de div*/
+/* NEWSLETTER */
+.newsletter {
     background: #f7f7f7;
-    padding: 60px calc((100% - 960px) / 2) ;
+    padding: 60px calc((100% - 960px) / 2); /* centraliza conteúdo */
     display: flex;
     flex-wrap: wrap;
 }
@@ -363,7 +334,7 @@ img {
     margin: 0 10px;
 }
 
-.newsletter-info h1{
+.newsletter-info h1 {
     font-size: 3em;
     color: #122ab2;
 }
@@ -411,21 +382,19 @@ img {
     padding: 15px 10px;
 }
 
-@media(max-width: 600px) { /*quando a tela diminuir para 600px a font-size diminui para 1.5em*/
+/* botão menor no mobile */
+@media(max-width: 600px) {
     .newsletter-form button {
         font-size: 1.5em;
     }
-    
 }
 
-
-/*footer*/
-
+/* FOOTER */
 .footer {
     display: flex;
     background: #2c70ff;
-    height: 200px; /*altura*/
-    align-items: center;
+    height: 200px; /* altura do rodapé */
+    align-items: center; /* centraliza verticalmente */
 }
 
 .footer p {
