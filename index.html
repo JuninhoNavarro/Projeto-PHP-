@@ -104,53 +104,56 @@
 
     <!-- Seção de Planos de Turismo -->
     <section class="planos" id="planos"> <!--id é puxado no menu desse jeito-->
-        <!-- Plano História e Cultura -->
-        <div class="planos-item">
-            <h2>História e Cultura</h2> <!--titulo -->
-            <span>Ideal para quem gosta de conhecer a história e os marcos da cidade:</span> <!--texto de introdução do plano-->
-            <ul>
-                <!-- topicos que o plano tem-->
-                <li>Visita à Catedral</li>
-                <li>Visita ao Museu Municipal de Jaú</li>
-                <li>Almoço Porteira do Sul</li>
-                <li>Visita ao Teatro Elza Munerato</li>
-                <li>Jantar com música ao vivo </li>
-                <li>Pôr do sol no Parque do Rio Jaú</li>
-            </ul>
-            <a href="#">Saiba Mais</a> <!-- botão -->
+        <div class="planos-container">
+            <!-- Plano História e Cultura -->
+            <div class="planos-item">
+                <h2>História e Cultura</h2> <!--titulo -->
+                <span>Ideal para quem gosta de conhecer a história e os marcos da cidade:</span>
+                <!--texto de introdução do plano-->
+                <ul>
+                    <!-- topicos que o plano tem-->
+                    <li>Visita à Catedral</li>
+                    <li>Visita ao Museu Municipal de Jaú</li>
+                    <li>Almoço Porteira do Sul</li>
+                    <li>Visita ao Teatro Elza Munerato</li>
+                    <li>Jantar com música ao vivo </li>
+                    <li>Pôr do sol no Parque do Rio Jaú</li>
+                </ul>
+                <a href="#">Assinar</a> <!-- botão -->
+            </div>
+            <!-- Plano Natureza -->
+            <div class="planos-item">
+                <h2>Nutureza e Bem-Estar</h2> <!-- titulo -->
+                <span>Para quem busca relaxar e ter contato com o verde.</span> <!--texto de introdução do plano-->
+                <ul>
+                    <!-- topicos que o plano tem-->
+                    <li>Caminhada ou piquenique no Bosque Municiapal</li>
+                    <li>Almoço em restaurante rural ou pesqueiro</li>
+                    <li>Visita a uma fazenda de café ou turismo rural na região</li>
+                    <li>Café e Doces na Padaria Doce Pão</li>
+                    <li>Jantar leve no centro da cidade</li>
+                </ul>
+                <a href="#">Assinar</a> <!-- botão -->
+            </div>
+
+            <div class="planos-item">
+                <h2>Compras e Gastronomia</h2> <!-- titulo -->
+
+                <span>Perfeito para quem quer aproveitar os produtos locais e comer bem.</span>
+                <!--texto de introdução do plano-->
+                <ul>
+                    <!-- topicos que o plano tem-->
+                    <li>Visita ao Shopping Teritório do Calçado</li>
+                    <li>Compras em lojas tradicionais da região</li>
+                    <li>Almoço com culinária caipira ou churrascaria</li>
+                    <li>Parada para café ou sorvete artesanal</li>
+                    <li>Passeio noturno pelo centro iluminado</li>
+                    <li>Jantar em pizzaria ou restaurante moderno</li>
+                </ul>
+                <a href="#">Assinar</a> <!-- botão -->
+            </div>
+
         </div>
-        <!-- Plano Natureza -->
-        <div class="planos-item">
-            <h2>Nutureza e Bem-Estar</h2> <!-- titulo -->
-            <span>Para quem busca relaxar e ter contato com o verde.</span> <!--texto de introdução do plano-->
-            <ul>
-                <!-- topicos que o plano tem-->
-                <li>Caminhada ou piquenique no Bosque Municiapal</li> 
-                <li>Almoço em restaurante rural ou pesqueiro</li>
-                <li>Visita a uma fazenda de café ou turismo rural na região</li>
-                <li>Café e Doces na Padaria Doce Pão</li>
-                <li>Jantar leve no centro da cidade</li>
-            </ul>
-            <a href="#">Assinar</a> <!-- botão -->
-        </div>
-
-        <div class="planos-item">
-            <h2>Compras e Gastronomia</h2> <!-- titulo -->
-
-            <span>Perfeito para quem quer aproveitar os produtos locais e comer bem.</span> <!--texto de introdução do plano-->
-            <ul>
-                <!-- topicos que o plano tem-->
-                <li>Visita ao Shopping Teritório do Calçado</li>
-                <li>Compras em lojas tradicionais da região</li>
-                <li>Almoço com culinária caipira ou churrascaria</li>
-                <li>Parada para café ou sorvete artesanal</li>
-                <li>Passeio noturno pelo centro iluminado</li>
-                <li>Jantar em pizzaria ou restaurante moderno</li>
-            </ul>
-            <a href="#">Assinar</a> <!-- botão -->
-        </div>
-
-
     </section>
 
     <section class="qualidade" id="qualidade"> <!--id é puxado no menu desse jeito-->
@@ -186,16 +189,40 @@
             <p>Assine e fique por dentro das novidades</p>
         </div>
         <form class="newsletter-form"> <!--formulario-->
-            <input type="text" placeholder="Seu e-mail"> <!--inserindo dado (email), placeholder (é o texto que fica visivel antes de inserir o dado)--> 
+            <input type="text" placeholder="Seu e-mail">
+            <!--inserindo dado (email), placeholder (é o texto que fica visivel antes de inserir o dado)-->
             <button type="submit">Assinar</button> <!--botão-->
         </form>
 
         <!-- Rodapé -->
     </section>
-
     <footer class="footer">
-        <p> JaúTurismo © Todos os direitos reservados.</p>
-    </footer>
+  <div class="footer-container">
+    <div class="footer-info">
+      <h3>JaúTurismo</h3>
+      <p>Av. Brasil, 1234 - Centro, Jaú - SP</p>
+      <p>Telefone: (14) 3666-2419</p>
+      <p>E-mail: contato@jauturismo.com.br</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Links úteis</h3>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#produtos">Serviços</a></li>
+        <li><a href="#planos">Planos</a></li>
+        <li><a href="#qualidade">Qualidade</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h3>Siga-nos</h3>
+      <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">YouTube</a>
+    </div>
+  </div>
+
+  <p class="footer-copy">JaúTurismo © 2025 - Todos os direitos reservados</p>
+</footer>
 </body>
 
 </html>
